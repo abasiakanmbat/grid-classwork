@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid{display: grid;}
+    .purple{background-color: #993eb2;}
+    .red{background-color: #e74e33;}
+    .green{background-color:#2aa650;}
+    .blue{background-color: #58aae8;}
+    body{background-color:#000;}
+    div{
+      /* border: 1px solid black; */
+      border-radius: 7px;
+      gap: 9px;
+    }
+    .container{
+      /* background-color:#fff; */
+      border-radius: 0px;
+      padding: 10px;
+      margin: auto;
+      height: 80vh;
+      width: 85vw;
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    .div1{
+      display: grid;
+      grid-template-rows: auto 35% 25%;
+    }
+    .green2r{
+      grid-template-columns:auto auto;
+    }
+    .br1{
+      grid-template-rows: 20% auto;
+    }
+    .div2{
+      grid-template-rows: auto 30%;
+    }
+    .div3{
+      grid-template-rows: 15% 15% auto 10%;
+    }
+    .br3{
+      grid-template-columns: 25% auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="div1">
+      <div class="purple">purple</div>
+      <div class="grid green2r">
+        <div class="green">green</div>
+        <div class="grid br1">
+          <div class="blue">blue</div>
+          <div class="red">red</div>
+        </div>
+      </div>
+      <div class="green"> green</div>
+    </div>
+    <div class="div2 grid">
+      <div class="grid green2r">
+        <div class="green">green</div>
+        <div class="grid br1">
+          <div class="blue">blue</div>
+          <div class="red">red</div>
+        </div>
+      </div>
+      <div class="purple">purple</div>
+    </div>
+    <div class="div3 grid">
+      <div class="green">green</div>
+      <div class="grid br3">
+        <div class="blue">blue</div>
+        <div class="red">red</div>
+      </div>
+      <div class="purple">purple</div>
+      <div class="blue">blue</div>
+    </div>
+  </div>
+</body>
+</html>
